@@ -1,0 +1,69 @@
+@font-face
+    font-family: 'Roboto'
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype')
+
+*
+    margin: 0
+    padding: 0
+
+
+body
+    font-family: 'Roboto', sans-serif
+
+#app
+    width: 100%
+    height: 100vh
+    position: absolute
+    filter: blur(0.5em)
+h1
+    text-align: center
+    color: #EE7235
+    margin-bottom: 2em
+    padding-top: 1em
+    position: relative
+
+
+.btn-container
+    position: relative
+    display: flex
+    justify-content: center
+    gap: 1em
+    margin-bottom: 2em
+
+    .btn
+        height: 150px
+        width: 150px
+        border: 1px solid #ccc
+        border-radius: 20px
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+
+        .icon
+            width: 3em
+            height: 3em
+            background-repeat: no-repeat
+            background-size: cover
+
+            &.pause
+                background-image: url("./assets/icons/pause.svg") !important
+
+.volume-block
+    position: relative
+    display: flex
+    justify-content: center
+
+    .volume-scale
+        width: 150px
+        height: 6px
+        background: #fff
+        border-radius: 4px
+        display: flex
+        justify-content: center
+        align-items: center
+        .volume-control
+            height: 14px
+            width: 14px
+            border-radius: 50%
+            background: #0076FF
