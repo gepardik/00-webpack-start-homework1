@@ -4,6 +4,7 @@ import buttons from './data'
 let activeImgIdx = 0
 const app = document.getElementById('app')
 let audio = new Audio(buttons[0].sound)
+audio.loop = true
 audio.volume = 0.5
 
 function btnClickHandler(btn, idx) {
@@ -62,7 +63,7 @@ function draw() {
         })
 
         btnContainer.appendChild(el)
-        updateMainBg(activeImgIdx)
+        //updateMainBg(activeImgIdx)
     })
 
 
