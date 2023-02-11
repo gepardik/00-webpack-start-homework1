@@ -15,6 +15,7 @@ body
     height: 100vh
     position: absolute
     filter: blur(0.5em)
+    transition: all 3000ms
 h1
     text-align: center
     color: #EE7235
@@ -39,6 +40,19 @@ h1
         display: flex
         justify-content: center
         align-items: center
+        &:after
+            position: absolute
+            display: flex
+            height: 150px
+            width: 150px
+            border-radius: 20px
+            content: ''
+            background: #fff
+            opacity: 0
+            transition: opacity ease 500ms
+        &:hover
+            &:after
+                opacity: 0.1
 
         .icon
             width: 3em
