@@ -56,7 +56,7 @@ function draw() {
         el.appendChild(icon)
         el.id = button.id
         el.classList.add(...button.classes)
-        el.style.background = `url(${button.bg})`
+        el.style.backgroundImage = `url(${button.bg})`
         el.addEventListener('click', () => {
             btnClickHandler(button, idx)
         })
